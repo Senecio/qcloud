@@ -1,0 +1,30 @@
+{
+  "name": "qclound test",
+  "version": "1.0.0",
+  "description": "node test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Senecio/qclound.git"
+  },
+  "keywords": [
+    "h5",
+    "nodejs",
+    "online"
+  ],
+  "author": "lsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Senecio/qclound/issues"
+  },
+  "homepage": "https://github.com/Senecio/qclound#readme",
+  "dependencies": {
+  },
+  "engines": {
+    "node": "4.x"
+  }
+}
