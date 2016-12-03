@@ -1,5 +1,5 @@
 {
-  "name": "qclound test",
+  "name": "test2016",
   "version": "1.0.0",
   "description": "node test",
   "main": "server.js",
@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/Senecio/qclound#readme",
   "dependencies": {
-    "leanengine": "^1.0.0-beta"
   },
   "engines": {
     "node": "4.x"
