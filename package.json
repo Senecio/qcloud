@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Senecio/qclound#readme",
   "dependencies": {
+    "leanengine": "^1.0.0-beta"
   },
   "engines": {
     "node": "4.x"
