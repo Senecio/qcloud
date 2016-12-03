@@ -7,26 +7,21 @@ AV.init({
 });*/
 
 var os = require('os');  
-var IPv4,hostName;
+
+var hostName=os.hostname();
 var cpu = os.cpus();
 var platform = os.platform();
-hostName=os.hostname();
-for(var i=0;i<os.networkInterfaces().eth0.length;i++){  
-    if(os.networkInterfaces().eth0[i].family=='IPv4'){  
-        IPv4=os.networkInterfaces().eth0[i].address;  
-    }  
-}
 
+console.log(hostName);
 console.log(cpu);
+console.log(platform);
 console.log(os.networkInterfaces());
 
 
 var http = require("http");
 http.createServer(function(request, response) {  
     response.writeHead(200, {"Content-Type": "text/plain"}); 
-    response.write(hostName);
-    response.write(platform);
-    response.write(IPv4);
+    response.write("hello world.");
     response.end();
 }).listen(process.env.LEANCLOUD_APP_PORT);
 console.log("nodejs start listen process.env.LEANCLOUD_APP_PORT port!");
