@@ -78,11 +78,11 @@ function url_get(url_or_options, callback, pre_callback) {
             return body += chunk;
         });
         return resp.on('end', function () {
-            if (process.env.DEBUG) {
-                console.log(resp.statusCode);
-                console.log(resp.headers);
-                console.log(body);
-            }
+            //if (process.env.DEBUG) {
+            //    console.log(resp.statusCode);
+            //    console.log(resp.headers);
+            //    console.log(body);
+            //}
             return callback(0, res, body);
         });
     }).on("error", function (e) {
@@ -118,11 +118,11 @@ function url_post(options, form, callback) {
             return body += chunk;
         });
         return resp.on('end', function () {
-            if (process.env.DEBUG) {
-                console.log(resp.statusCode);
-                console.log(resp.headers);
-                console.log(body);
-            }
+            //if (process.env.DEBUG) {
+            //    console.log(resp.statusCode);
+            //    console.log(resp.headers);
+            //    console.log(body);
+            //}
             return callback(0, res, body);
         });
     }).on("error", function (e) {
@@ -167,11 +167,11 @@ function http_request(options, params, callback) {
             return body += chunk;
         });
         return resp.on('end', function () {
-            if (process.env.DEBUG) {
-                console.log(resp.statusCode);
-                console.log(resp.headers);
-                console.log(body);
-            }
+            //if (process.env.DEBUG) {
+            //    console.log(resp.statusCode);
+            //    console.log(resp.headers);
+            //    console.log(body);
+            //}
             try {
                 return handle_resp_body(body, options, callback);
             } catch (err) {
