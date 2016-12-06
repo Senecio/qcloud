@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/Senecio/qclound#readme",
   "dependencies": {
+    "async": "^1.5.2",
+    "lodash": "^4.5.1",
+    "log": "^1.4.0"
   },
   "engines": {
     "node": "4.x"

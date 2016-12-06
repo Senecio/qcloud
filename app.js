@@ -1,12 +1,3 @@
-
-/*var AV = require('leanengine');
-AV.init({
-  appId: process.env.LEANCLOUD_APP_ID || 'KbDLPWwEVNtxnGYQn6XmkJF6-9Nh9j0Va',
-  appKey: process.env.LEANCLOUD_APP_KEY || 'Y0Ma4uJYsgHBX7uQBMMby5sp',
-  masterKey: process.env.LEANCLOUD_APP_MASTER_KEY || 'pwpLDmVHzBGdihDpME24yEX8'
-});*/
-
-
 'use strict';
 
 const fs = require('fs');
@@ -46,6 +37,8 @@ let server = http.createServer((request, response) => {
     }
 });
 
-var serverPort = process.env.LEANCLOUD_APP_PORT || 8080;
+var serverPort = process.env.PORT || 8080;
+
 server.listen(serverPort);
+
 qq.Login();
